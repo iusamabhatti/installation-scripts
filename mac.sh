@@ -53,3 +53,12 @@ check_installation() {
             ;;
     esac
 }
+
+# Main script loop
+while true; do
+    display_menu
+    read -r option
+    execute_option "$option"
+    echo -e "\nPress Enter to continue..."
+    read -r
+done
